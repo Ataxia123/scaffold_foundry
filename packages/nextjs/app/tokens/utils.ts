@@ -18,7 +18,7 @@ import {
   WethContract,
 } from './lib/contracts.types'
 import { AbiItem } from 'web3-utils'
-import { Proof } from '../types/types'
+import { Proof } from '../../types/types'
 
 BigNumber.config({
   EXPONENTIAL_AT: 1000,

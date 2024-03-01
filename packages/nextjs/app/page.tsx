@@ -1,22 +1,11 @@
 "use client";
 
-import ReactDOM from 'react-dom';
 import Link from "next/link";
 import type { NextPage } from "next";
 import { useAccount } from "wagmi";
 import { BugAntIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { Address } from "~~/components/scaffold-eth";
-import Farms from "~~/app/Farms"
-
-import { BrowserRouter } from 'react-router-dom';
-{
-ReactDOM.render(
-  <BrowserRouter>
-    <Farms />
-    </BrowserRouter>,
-  document.getElementById('root')
-);
-}
+import Farm from "~~/app/Farm"
 
 
 const Home: NextPage = () => {
@@ -33,10 +22,10 @@ const Home: NextPage = () => {
           <div className="flex justify-center items-center space-x-2">
             <p className="my-2 font-medium">Connected Address:</p>
             <Address address={connectedAddress} />
-            <Farms/>
           </div>
           <p className="text-center text-lg">
             Get started by staking{" "}<br></br>
+            <Farm/>
             <code className="bg-base-300 text-base font-bold max-w-full break-words break-all inline-block">
               all ur coins
             </code>

@@ -13,11 +13,11 @@ import WalletProviderModal from '~~/app/components/WalletProviderModal'
 import useModal from '~~/app/hooks/useModal'
 import {useAccount} from 'wagmi'
 
-import Farm from '../Farm'
+import Farm from '~~/app/Farm'
 import styled from 'styled-components'
 import { withStyles } from '@material-ui/core'
 
-import FarmCards from './components/FarmCards'
+import FarmCards from '~~/app/components/FarmCards'
 import MuiContainer from '@material-ui/core/Container'
 import { TerraFarm } from '~~/app/components/Lottie'
 import Spacer from '~~/app/components/Spacer'
