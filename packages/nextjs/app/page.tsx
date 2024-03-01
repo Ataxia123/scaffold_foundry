@@ -1,11 +1,23 @@
 "use client";
 
+import ReactDOM from 'react-dom';
 import Link from "next/link";
 import type { NextPage } from "next";
 import { useAccount } from "wagmi";
 import { BugAntIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { Address } from "~~/components/scaffold-eth";
 import Farms from "~~/app/Farms"
+
+import { BrowserRouter } from 'react-router-dom';
+{
+ReactDOM.render(
+  <BrowserRouter>
+    <Farms />
+    </BrowserRouter>,
+  document.getElementById('root')
+);
+}
+
 
 const Home: NextPage = () => {
   const { address: connectedAddress } = useAccount();
